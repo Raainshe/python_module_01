@@ -5,7 +5,7 @@ class plant:
         self.size = size
         self.age = age
     def show(self):
-        print(f"{self.name}: {self.size}cm and {self.age} days old")
+        print(f"Created: {self.name}: {self.size}cm and {self.age} days old")
     def age2(self):
         total_growth = 0
         for day in range(7):
@@ -34,8 +34,10 @@ def main():
     daisy = plant("Daisy", 33.0, 50)
     cactus = plant("Cactus", 10.0, 100)
 
-    print("==============")
-    rose.age2()
+    print("==Plant Factory Output==")
+    rose.show()
+    daisy.show()
+    cactus.show()
     print("==============")
 
 
